@@ -1,18 +1,10 @@
-var Default = /** @class */ (function () {
-    function Default() {
-    }
-    return Default;
-}());
-constructor();
-{
-    this.metodo();
-    this.array = [{
-            teste: "teste"
-        }];
+var a = [
+    ['url', 146554, 5050],
+    ['port', 8080, 124578]
+];
+function funcao() {
+    a.forEach(function (element) {
+        console.log(element[1]);
+    });
 }
-metodo();
-{
-    this.numero = 10;
-    return this.texto = 'este é um alert simples em typescript $(this.numero)';
-    return alert(this.texto);
-}
+funcao();

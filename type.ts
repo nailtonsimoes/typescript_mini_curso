@@ -1,23 +1,12 @@
-class Default {
-  texto: string;
-  numero: number;
-  qualquer: any;
-  boleano: boolean;
-  array: Array<any>;
+let a: [string, any, number] [] = [
+ ['url',146554, 5050],
+ ['port', 8080, 124578]
+];
 
-  constructor() {
-    this.metodo();
-    this.array = [{
-      teste: "teste"
-    }];
-  }
-  
-  metodo() {
-    this.numero = 10;
-    return this.texto = 'este é um alert simples em typescript $(this.numero)';
-    return alert(this.texto);
-  }
+function funcao () {
+  a.forEach(element => {
+    console.log(element[1]);
+  });
 }
 
-
-
+funcao();
