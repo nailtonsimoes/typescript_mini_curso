@@ -1,10 +1,17 @@
-var a = [
-    ['url', 146554, 5050],
-    ['port', 8080, 124578]
-];
+var cardsuits;
+(function (cardsuits) {
+    cardsuits[cardsuits["Clubs"] = 0] = "Clubs";
+    cardsuits[cardsuits["Hearts"] = 1] = "Hearts";
+    cardsuits[cardsuits["Sandes"] = 2] = "Sandes";
+    cardsuits[cardsuits["Diamonds"] = 3] = "Diamonds";
+})(cardsuits || (cardsuits = {}));
 function funcao() {
-    a.forEach(function (element) {
-        console.log(element[1]);
-    });
+    var x = 1;
+    if (x == cardsuits.Clubs) {
+        alert('true');
+    }
+    else {
+        alert('false');
+    }
 }
 funcao();

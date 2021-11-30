@@ -1,12 +1,13 @@
-let a: [string, any, number] [] = [
- ['url',146554, 5050],
- ['port', 8080, 124578]
-];
+enum cardsuits {Clubs, Hearts, Sandes, Diamonds}
 
 function funcao () {
-  a.forEach(element => {
-    console.log(element[1]);
-  });
+  let x = 1;
+  if (x==cardsuits.Clubs){
+    alert('true');
+  }else{
+    alert('false');
+  }
 }
 
 funcao();
+
