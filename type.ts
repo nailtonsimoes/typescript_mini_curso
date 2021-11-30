@@ -1,16 +1,12 @@
-/*=======  paramertros com o "?" são parametros opcionais   ===*/
-let obj: {name: string, age: number, active?: boolean} = {
-  name:'9newton',
-  age: 75,
+/* o uso do export possobilita exportar um objeto para outro arquivo*/
+export interface User{
+  name: string;
+  age: number;
+  active?: boolean;
 }
 
-let obj2: {[key: string]: string} = {
-  name: 'nailton',
-  bar: 'simoes'
+let usuario: User = {
+  name:'nailton',
+  age: 25,
+  active: true
 }
-
-function func(nome: string, sobrenome: string){
-
-}
-
-func('nome', 'sobrenome');
