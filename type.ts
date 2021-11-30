@@ -1,13 +1,16 @@
-enum cardsuits {Clubs, Hearts, Sandes, Diamonds}
-
-function funcao () {
-  let x = 1;
-  if (x==cardsuits.Clubs){
-    alert('true');
-  }else{
-    alert('false');
-  }
+/*=======  paramertros com o "?" são parametros opcionais   ===*/
+let obj: {name: string, age: number, active?: boolean} = {
+  name:'9newton',
+  age: 75,
 }
 
-funcao();
+let obj2: {[key: string]: string} = {
+  name: 'nailton',
+  bar: 'simoes'
+}
 
+function func(nome: string, sobrenome: string){
+
+}
+
+func('nome', 'sobrenome');
